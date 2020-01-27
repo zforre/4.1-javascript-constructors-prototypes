@@ -47,16 +47,16 @@ function expect(target) {
 // \__,_/\____/\__, /____/
 //            /____/
 
-var oz = new Dog({
+let oz = new Dog({
   color: "red",
   hungry: false
 });
 
-var moonshine = new Dog({
+let moonshine = new Dog({
   color: "blue-red"
 });
 
-var charlie = new Dog();
+let charlie = new Dog();
 
 
 //     __
@@ -65,9 +65,9 @@ var charlie = new Dog();
 //  / / / / /_/ / / / / / / /_/ / / / (__  )
 // /_/ /_/\__,_/_/ /_/ /_/\__,_/_/ /_/____/
 
-var mady = new Human();
+let mady = new Human();
 
-var faith = new Human({
+let faith = new Human({
   cool: true
 });
 
