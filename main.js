@@ -37,7 +37,28 @@ function expect(target) {
 //
 // ONLY ADD CODE TO THIS SECTION
 
+class Dog {
+  constructor() {
+    this.status = 'normal' || 'happy';
+    this.color = 'red' || 'blue-red';
+    this.hungry = false || true;
+  }
+}
 
+
+class Human {
+  constructor(obj) {
+    // console.log('obj', obj);
+    this.cool = false
+    }
+    pet() {
+
+      Dog.status === 'happy';
+    }
+    feed() {
+      Dog.hungry === false;
+    }
+  }
 
 
 //        __
@@ -47,21 +68,13 @@ function expect(target) {
 // \__,_/\____/\__, /____/
 //            /____/
 
-class Dog {
-  constructor() {
-    this.status = 'normal' || 'happy';
-    this.color = 'red' || 'blue-red';
-    this.hungry = false || true;
-  }
-}
-
 let oz = new Dog({
   color: "red",
   hungry: false
 });
 
 let moonshine = new Dog({
-  color: "blue-red"
+  color: "blue-red",
 });
 
 let charlie = new Dog();
@@ -73,23 +86,7 @@ let charlie = new Dog();
 //  / / / / /_/ / / / / / / /_/ / / / (__  )
 // /_/ /_/\__,_/_/ /_/ /_/\__,_/_/ /_/____/
 
-class Human {
-  constructor() {
-    this.cool = false || true;
-    }
-    pet() {
-      Dog.status === 'happy';
-    }
-    feed() {
-      Dog.hungry === false;
-    }
-  }
-
-
-
-let mady = new Human({
-  
-});
+let mady = new Human();
 
 let faith = new Human({
   cool: true
