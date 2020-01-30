@@ -38,25 +38,33 @@ function expect(target) {
 // ONLY ADD CODE TO THIS SECTION
 
 class Dog {
-  constructor() {
-    this.status = 'normal' || 'happy';
-    this.color = 'red' || 'blue-red';
-    this.hungry = false || true;
+  constructor(options) {
+
+    options = options || {};
+    // this.staus = 'normal' || 'happy'; this logic does not work
+    this.status = 'normal'; // this is the correct logic because youre setting the staus to be 'normal' until changed with pet()
+    this.color = options.color;
+
+    if (options.hungry === false) {
+      this.hungry = false;
+    } else {
+      this.hungry = true;
+    }
+
   }
 }
 
 
 class Human {
-  constructor(obj) {
-    // console.log('obj', obj);
-    this.cool = false
+  constructor(options) {
+    options = options || {};
+    this.cool = options.cool || false;
     }
-    pet() {
-
-      Dog.status === 'happy';
+    pet(dog) {
+      dog.status = 'happy';
     }
-    feed() {
-      Dog.hungry === false;
+    feed(dog) {
+      dog.hungry = false;
     }
   }
 
